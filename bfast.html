@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>Vibin' Deer</title>
+        <link rel="stylesheet" href="style.css">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); </style>
+    </head>
+
+    <body class="body-story">
+        <div class="container">
+            
+            <div class="music-page-bfast">
+
+                <div class="top-page">
+                    <a href="index.html"><img class="logo" src="media/logo.png" alt=""></a>
+
+                    <nav class="navigation">
+                        <ul class="themes-nav">
+                            <li>
+                                <img src="media/NEW-UI/bookmark_1.png" class="bookmark" alt="">
+                                <a class="active" href="bfast.html">早餐店</a>
+                            </li>
+                            <li>
+                                <img src="media/NEW-UI/bookmark_2.png" class="bookmark2" alt="">
+                                <a class="site" href="cafe.html">咖啡廳</a>
+                            </li>
+                            <li>
+                                <img src="media/NEW-UI/bookmark_3.png" class="bookmark3" alt="">
+                                <a class="site" href="train.html">火車站</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+               <div class="story-content">
+                    <video autoplay loop width="600" class="video">
+                        <source src="media/NEW_animation_breakfast.mp4" type= "video/mp4">
+                    </video>
+
+                    <div class="music">
+                        <div class="play-music" id="popup">
+                            <p class="title">早餐店</p>
+                            <!-- BGM -->
+                            <button class="close-button" id="close" onclick="closePopup()">
+                                <img src="media/close.png" alt="">
+                            </button>
+
+                            <div class="BGM">
+                                <div class="play-play-music">
+                                    <img src="media/pause.png" id="play-icon-bfast">
+                                    <p class="song-name">背景音樂</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-bfast">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-bfast" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-bfast" step="1">
+                                </div>
+                            </div>
+
+                            <!-- bell -->
+                            <div class="bell">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-bfast-2">
+                                    <p class="song-name">學校鐘聲</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-bfast-2">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-bfast-2" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-bfast-2" step="1">
+                                </div>
+                            </div>
+
+                            <!-- bfast -->
+                            <div class="bfast">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-bfast-3">
+                                    <p class="song-name">早餐</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-bfast-3">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-bfast-3" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-bfast-3" step="1">
+                                </div>
+                            </div>
+
+                            <!-- trafic -->
+                            <div class="trafic">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-bfast-4">
+                                    <p class="song-name">交通與人群</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-bfast-4">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-bfast-4" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-bfast-4" step="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="music-button" id="music-button" onclick="openPopup()">
+                            <img src="media/icon_sound.png" alt="">
+                        </button>
+                        
+                    </div>
+
+                    <div class="story">
+                        <p class="paragraph1" id="changeText">我是一隻八哥</p>
+                        <button name="button" type="button" class="btn-text" id="1" onclick="changeText(); changeImage()"><img src="media/NEXT BT/breakfastStory_nextBT_1.png" alt=""></button>
+                    </div>
+               </div>
+
+            </div>
+
+            <div class="pages" id="pages"p>
+                <a href="gamebfast.html" class="navi">
+                    <img src="media/NEW-UI/game_breakfast.png" class="navi-page5" alt="">
+                </a>
+                <a href="bfastsound.html" class="navi">
+                    <img src="media/NEW-UI/indesk_paper_new.png" class="navi-page6" alt="">
+                </a>
+            </div>
+
+            <div class="back-btn">
+                <a href="index.html">
+                    <img src="media/BACK TO HOME.png" class="back-button" alt="">
+                </a>
+            </div>
+            
+
+        </div>
+
+        <audio autoplay loop id="audioBfast">
+            <source src="media/sound/bfast_bgm.wav" type="audio/wav">
+        </audio>
+
+        <audio id="audioBell">
+            <source src="media/story-sound/bfast/bfast-schoolbell.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="audioFood">
+            <source src="media/story-sound/bfast/bfast-bfast.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="audioTrafic">
+            <source src="media/story-sound/bfast/bfast-whitenoise.mp3" type="audio/mp3">
+        </audio>
+        
+        <!-- <audio autoplay>
+            <source src="media/bfast_BGM.wav" type="audio/wav">
+          </audio> -->
+
+        <script src="script.js"></script>
+        <script src="bfscript.js"></script>
+        <script src="myDino.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Vibin' Deer</title>
+        <link rel="stylesheet" href="style.css">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); </style>
+    </head>
+
+    <body class="body-story">
+        <div class="container">
+            
+            <div class="music-page-bfast">
+
+                <div class="top-page">
+                    <a href="index.html"><img class="logo" src="media/logo.png" alt=""></a>
+
+                    <nav class="navigation">
+                        <ul class="themes-nav">
+                            <li>
+                                <img src="media/NEW-UI/bookmark_1.png" class="bookmark" alt="">
+                                <a class="site" href="bfast.html">早餐店</a>
+                            </li>
+                            <li>
+                                <img src="media/NEW-UI/bookmark_2.png" class="bookmark2" alt="">
+                                <a class="site" href="cafe.html">咖啡廳</a>
+                            </li>
+                            <li>
+                                <img src="media/NEW-UI/bookmark_3.png" class="bookmark3" alt="">
+                                <a class="active" href="train.html">火車站</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+               <div class="story-content">
+                    <video autoplay loop width="600" class="video">
+                        <source src="media/animation_station_book.mp4" type= "video/mp4">
+                    </video>
+                    
+
+                    <div class="music">
+                        <div class="play-music" id="popup">
+                            <p class="title">臺北火車站</p>
+                            <!-- BGM -->
+                            <button class="close-button" id="close" onclick="closePopup()">
+                                <img src="media/close.png" alt="">
+                            </button>
+    
+                            <div class="BGM">
+                                <div class="play-play-music">
+                                    <img src="media/pause.png" id="play-icon">
+                                    <p class="song-name">背景音樂</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider" step="1">
+                                </div>
+                            </div>
+                            
+                            <!-- Train -->
+                            <div class="Train">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-3">
+                                    <p class="song-name">火車</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-3">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-3" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-3" step="1">
+                                </div>
+                            </div>
+    
+                            <!-- people -->
+                            <div class="People">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-1">
+                                    <p class="song-name">人群</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-1">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-1" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-1" step="1">
+                                </div>
+                            </div>
+                            
+    
+                            <!-- white noise -->
+                            <div class="White-Noise">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-2">
+                                    <p class="song-name">白噪音</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-2">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-2" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-2" step="1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="music-button" id="music-button" onclick="openPopup()">
+                            <img src="media/icon_sound.png" alt="">
+                        </button>
+                        
+                    </div>
+
+                    <div class="story">
+                        <p class="paragraph1" id="changeTextTrain">進站的語音，告別熟悉的鳥語蟲鳴</p>
+                        <button name="button2" type="button" class="btn-text" id="1" onclick="changeTextTrain(); changeImage()"><img src="media/NEXT BT/train_nextBT_1.png" alt=""></button>
+                    </div>
+               </div>
+
+            </div>
+
+            <div class="pages" id="pages"p>
+                <a href="gametrain.html" class="navi">
+                    <img src="media/NEW-UI/game_train.png" class="navi-page5" alt="">
+                </a>
+                <a href="trainsound.html" class="navi">
+                    <img src="media/NEW-UI/indesk_paper_new.png" class="navi-page6" alt="">
+                </a>
+            </div>
+
+            <div class="back-btn">
+                <a href="index.html">
+                    <img src="media/BACK TO HOME.png" class="back-button" alt="">
+                </a>
+            </div>
+            
+
+        </div>
+
+        <audio autoplay loop id="musicTrain">
+            <source src="media/sound/train_bgm.wav" type="audio/mp3">
+        </audio>
+
+        <audio id="musicTrain-sound">
+            <source src="media/story-sound/train/tran-train.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="musicTrain-people">
+            <source src="media/story-sound/train/train-people.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="musicTrain-whitenoise">
+            <source src="media/story-sound/train/train-whitenoise.mp3" type="audio/mp3">
+        </audio>
+
+        <script src="script.js"></script>
+        <script src="myDino.js"></script>   
+    </body>
+</html>

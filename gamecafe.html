@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Vibin' Deer</title>
+        <link rel="stylesheet" href="style.css">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); </style>
+    </head>
+
+    <body class="body-game">
+        <div class="container-game">
+            
+            <div class="top-page">
+                <a href="index.html"><img class="logo" src="media/logo.png" alt=""></a>
+
+                <nav class="navigation">
+                    <ul class="themes-nav">
+                        <li>
+                            <a class="site" href="bfast.html">早餐店</a>
+                        </li>
+                        <li>
+                            <a class="active" href="cafe.html">咖啡廳</a>
+                        </li>
+                        <li>
+                            <a class="site" href="train.html">火車站</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="dino">
+                
+                <canvas id="board2"></canvas>
+                <!-- <p>按 空白鍵 跳躍</p> -->
+                <p id="p"></p>
+            </div>
+            
+            <div class="game-console">
+                <img src="media/game_space.png" class="console" alt="">
+                <img src="media/game_F5.png" class="console" alt="">
+            </div>
+            
+            <div class="pages">
+                <a href="cafe.html">
+                    <img src="media/NEW-UI/indesk_book_new.png" class="navi-page1" alt="">
+                </a>
+                <a href="cafesound.html">
+                    <img src="media/NEW-UI/indesk_paper_new.png" class="navi-page2" alt="">
+                </a>
+            </div>
+
+            <div class="back-btn3">
+                <a href="index.html">
+                    <img src="media/BACK TO HOME.png" class="back-button" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- <audio id="sound1Bfast">
+            <source src="media/bfast/breakfast_fringfood.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="sound2Bfast">
+            <source src="media/bfast/breakfast_money.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="sound3Bfast">
+            <source src="media/bfast/breakfast_fringfood.mp3" type="audio/mp3">
+        </audio>
+        
+        <audio id="sound4Bfast">
+            <source src="media/bfast/breakfast_juice2.mp3" type="audio/mp3">
+        </audio> -->
+
+        <audio autoplay loop src="media/sound/cafe_bgm.wav"></audio>
+        
+
+        <script src="script.js"></script>
+        <script src="bfscript.js"></script>
+        <script src="myDinoCafe.js"></script>
+        <script src="iconSound.js"></script>
+        
+    </body>
+</html>

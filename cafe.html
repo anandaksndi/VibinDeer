@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <title>Vibin' Deer</title>
+        <link rel="stylesheet" href="style.css">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); </style>
+    </head>
+
+    <body class="body-story">
+        <div class="container">
+            
+            <div class="music-page-bfast">
+
+                <div class="top-page">
+                    <a href="index.html"><img class="logo" src="media/logo.png" alt=""></a>
+
+                    <nav class="navigation">
+                        <ul class="themes-nav">
+                            <li>
+                                <img src="media/NEW-UI/bookmark_1.png" class="bookmark" alt="">
+                                <a class="site" href="bfast.html">早餐店</a>
+                            </li>
+                            <li>
+                                <img src="media/NEW-UI/bookmark_2.png" class="bookmark2" alt="">
+                                <a class="active" href="cafe.html">咖啡廳</a>
+                            </li>
+                            <li>
+                                <img src="media/NEW-UI/bookmark_3.png" class="bookmark3" alt="">
+                                <a class="site" href="train.html">火車站</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+               <div class="story-content">
+                    <video autoplay loop width="600" class="video">
+                        <source src="media/animation_cafe_book.mp4" type= "video/mp4">
+                    </video>
+                    
+                    <div class="music">
+                        <div class="play-music-cf" id="popup-cafe">
+                            <p class="title">貓貓咖啡廳</p>
+                            <!-- BGM -->
+                            <button class="close-button" id="close" onclick="closePopupCafe()">
+                                <img src="media/close.png" alt="">
+                            </button>
+    
+                            <div class="BGM">
+                                <div class="play-play-music">
+                                    <img src="media/pause.png" id="play-icon-4">
+                                    <p class="song-name">背景音樂</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-4">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-4" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-4" step="1">
+                                </div>
+                            </div>
+    
+                            <!-- Coffee -->
+                            <div class="Coffee">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-5">
+                                    <p class="song-name">咖啡</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-5">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-5" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-5" step="1">
+                                </div>
+                            </div>
+    
+                            <!-- Counter -->
+                            <div class="Counter">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-6">
+                                    <p class="song-name">櫃檯</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-6">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-6" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-6" step="1">
+                                </div>
+                            </div>
+    
+                            <!-- Cat -->
+                            <div class="Cat">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-7">
+                                    <p class="song-name">貓咪</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-7">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-7" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-7" step="1">
+                                </div>
+                            </div>
+    
+                            <!-- Customer -->
+                            <div class="Customer">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-8">
+                                    <p class="song-name">客人</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-8">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-8" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volumeslider-8" step="1">
+                                </div>
+                            </div>
+                            
+                            <!-- White -->
+                            <div class="White">
+                                <div class="play-play-music">
+                                    <img src="media/play.png" id="play-icon-9">
+                                    <p class="song-name">白噪音</p>
+                                </div>
+        
+                                <div class="volume">
+                                    <img src="media/volume.png" id="volume-png-9">
+                                    <i class="volume volume-up" aria-hidden="true" id="volume-icon-9" onclick="mute_sound()"></i>
+                                    <input type="range" min="0" max="100" value="80" onchange="volume_change()" id="volumeslider-9" step="1">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button class="music-button-cafe" id="music-button" onclick="openPopupCafe()">
+                            <img src="media/icon_sound.png" alt="">
+                        </button>
+                    </div>
+
+                    <div class="story">
+                        <p class="paragraph1" id="changeTextCafe">「喵。」</p>
+                        <button name="button1" type="button" class="btn-text" id="1" onclick="changeTextCafe();"><img src="media/next bt/coffee_nextBT_1.png" alt=""></button>
+                        
+                    </div>
+                    
+               </div>
+
+            </div>
+
+            <div class="pages" id="pages">
+                <a href="gamecafe.html" class="navi">
+                    <img src="media/NEW-UI/game_coffee.png" class="navi-page5" alt="">
+                </a>
+                <a href="cafesound.html" class="navi">
+                    <img src="media/NEW-UI/indesk_paper_new.png" class="navi-page6" alt="">
+                </a>
+            </div>
+
+            <div class="back-btn">
+                <a href="index.html">
+                    <img src="media/BACK TO HOME.png" class="back-button" alt="">
+                </a>
+            </div>
+            
+
+        </div>
+
+        <audio autoplay loop id="audioCafe">
+            <source src="media/sound/cafe_bgm.wav" type="audio/mp3">
+        </audio>
+
+        <audio id="audioCoffee">
+            <source src="media/story-sound/cafe/cafe-coffee.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="audioCounter">
+            <source src="media/story-sound/cafe/cafe-cashier.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="audioCat">
+            <source src="media/story-sound/cafe/cafe-cat.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="audioCustomer">
+            <source src="media/story-sound/cafe/cafe-busy.mp3" type="audio/mp3">
+        </audio>
+
+        <audio id="audioWhite">
+            <source src="media/story-sound/cafe/cafe-people.mp3" type="audio/mp3">
+        </audio>
+
+        <script src="script.js"></script>
+        <script src="cfscript.js"></script>
+        <script src="myDino.js"></script>
+        
+    </body>
+</html>
